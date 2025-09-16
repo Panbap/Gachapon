@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tạo dữ liệu Gacha</title>
+  <link rel="icon" href="https://github.com/Panbap/anh/blob/main/icon1.png?raw=true" type="image/png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <style>
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      font-weight: 600;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      font-size: 24px;
+      color: #555;
+      flex-direction: column;
+    }
+
+    .spinner {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #ff7094;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1.2s linear infinite;
+      margin-bottom: 15px;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loading-text::after {
+      content: '';
+      display: inline-block;
+      animation: dots 1.5s steps(3, end) infinite;
+    }
+
+    @keyframes dots {
+
+      0%,
+      20% {
+        content: '';
+      }
+
+      40% {
+        content: '.';
+      }
+
+      60% {
+        content: '..';
+      }
+
+      80%,
+      100% {
+        content: '...';
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <div id="loading-text">Loading</div>
+  </div>
+  <div class="container">
+    <h2>Tạo link Gacha </h2>
+
+    <form id="dataForm">
+      <div id="textsContainer">
+        <!-- Ô text mẫu đầu tiên -->
+        <div class="input-group">
+          <label>Text 1: <input type="text" name="text" value="Xin chào!"></label>
+          <button type="button" class="remove-btn" onclick="this.parentElement.remove()">❌</button>
+        </div>
+        <div class="input-group">
+          <label>Text 2: <input type="text" name="text" value="Yêu thương"></label>
+          <button type="button" class="remove-btn" onclick="this.parentElement.remove()">❌</button>
+        </div>
+      </div>
+      <div class="button-group">
+        <button type="button" id="addTextBtn">+ Thêm text</button>
+        <button type="submit">Tạo link đầy đủ</button>
+      </div>
+
+    </form>
+
+    <p><b>Link kết quả:</b></p>
+    <div class="link-output">
+      <button type="button" id="copyBtn" class="copy-btn">Copy</button>
+      <input type="text" id="outputLink" readonly />
+    </div>
+  </div>
+  <script>
+    const _0x3a67d5=_0x4cdb;!function(t,e){const n=_0x4cdb,a=_0x4a3c();for(;;)try{if(605038===-parseInt(n(362))/1*(parseInt(n(356))/2)+-parseInt(n(349))/3+parseInt(n(329))/4*(parseInt(n(354))/5)+-parseInt(n(330))/6+-parseInt(n(323))/7+parseInt(n(351))/8*(-parseInt(n(347))/9)+parseInt(n(344))/10)break;a.push(a.shift())}catch(t){a.push(a.shift())}}();const loadingText=document[_0x3a67d5(360)](_0x3a67d5(332));let dots=0;const loadingInterval=setInterval((()=>{const t=_0x3a67d5;dots=(dots+1)%4,loadingText.textContent=t(355)+"."[t(339)](dots)}),250);window[_0x3a67d5(337)](_0x3a67d5(357),(()=>{setTimeout((()=>{const t=_0x4cdb;clearInterval(loadingInterval),document.getElementById("loading-screen").style[t(346)]=t(333),document[t(360)]("main-content")[t(325)].display=t(341)}),300)})),document[_0x3a67d5(337)](_0x3a67d5(361),(function(t){const e=_0x3a67d5;("F12"===t[e(340)]||t[e(324)]&&t.shiftKey&&("I"===t[e(340)]||"J"===t.key)||t[e(324)]&&"U"===t.key)&&t[e(359)]()})),document[_0x3a67d5(337)](_0x3a67d5(322),(function(t){t.preventDefault()}));const offi=_0x3a67d5(328),current=window[_0x3a67d5(334)].hostname;function _0x4cdb(t,e){const n=_0x4a3c();return(_0x4cdb=function(t,e){return n[t-=322]})(t,e)}function _0x4a3c(){const t=["display","22950OloGWn","getTime","214563MoKbNw","text","2104IDQVen","body","innerHTML","7335fbTaHd","Loading","6BQNEmj","load","then","preventDefault","getElementById","keydown","316493UlSwPZ","contextmenu","1329132TUWQRx","ctrlKey","style","createElement","appendChild","panbap.github.io","508zqImTl","4948536vWBHUn",'\n                    <h1 style="color:red; font-size: 28px; text-align: center; margin-top: 100px;"> 🚨 Đang mở DevTools!</h1>\n                    <h1 style="color:red; font-size: 24px; text-align: center;">Nhấn F12 để đóng.</h1>',"loading-text","none","location","application/javascript","./assets/input.js","addEventListener","src","repeat","key","block","reload","script","31250110tZZSSR","innerText"];return(_0x4a3c=function(){return t})()}current!==offi&&(document.body[_0x3a67d5(353)]="",warningText[_0x3a67d5(345)]=" ",warningDiv[_0x3a67d5(327)](warningText),document.body[_0x3a67d5(327)](warningDiv));let devtoolsDetected=!1;setInterval((()=>{const _0x5bbcd3=_0x3a67d5,_0x10ebca=(new Date)[_0x5bbcd3(348)]();eval("debugger;");const _0x4cf21f=(new Date)[_0x5bbcd3(348)](),_0x4c2767=_0x4cf21f-_0x10ebca>100;_0x4c2767&&!devtoolsDetected&&(devtoolsDetected=!0,document[_0x5bbcd3(352)][_0x5bbcd3(353)]=_0x5bbcd3(331)),!_0x4c2767&&devtoolsDetected&&location[_0x5bbcd3(342)]()}),1e3),fetch(_0x3a67d5(336))[_0x3a67d5(358)]((t=>t[_0x3a67d5(350)]()))[_0x3a67d5(358)]((t=>{const e=_0x3a67d5,n=new Blob([t],{type:e(335)}),a=URL.createObjectURL(n),o=document[e(326)](e(343));o[e(338)]=a,document[e(352)][e(327)](o)}));
+  </script>
+</body>
+
+</html>
