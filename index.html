@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lovely – nơi chia sẻ yêu thương." />
+    <!-- <meta name="robots" content="index, follow"> -->
+    <title>Gacha</title>
+    <link rel="icon" href="https://github.com/Panbap/anh/blob/main/icon1.png?raw=true" type="image/png">
+    <link rel="stylesheet" id="main-css" data-info="version-1.0" media="all" href="./assets/styles.css?v=1.0"
+        title="Main Stylesheet" type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script defer id="main-script" data-version="1.0" src="assets/mins.js?v=1.0" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sticky-notes-container"></div>
+
+        <div class="mask">
+            <div class="winner"></div>
+            <svg viewbox="0 0 439 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M295.5 14.0103C400.3 15.2103 429.167 117.51 430.5 168.51C338.1 208.51 207.667 185.177 154 168.51C157.5 116.51 190.7 12.8103 295.5 14.0103Z"
+                    fill="white" stroke="#531028" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+                <path class="open-egg-color"
+                    d="M99.1013 198.787C-10.8987 165.987 1.26801 68.7865 21.1013 24.2865C152.701 -28.5135 247.268 59.6199 278.101 110.287C264.268 153.453 209.101 231.587 99.1013 198.787Z"
+                    fill="#F3D478"></path>
+                <path
+                    d="M21.1013 24.2865C1.26801 68.7865 -10.8987 165.987 99.1013 198.787C209.101 231.587 264.268 153.453 278.101 110.287M21.1013 24.2865C152.701 -28.5135 247.268 59.6199 278.101 110.287M21.1013 24.2865C44.6013 69.2865 128.901 149.487 278.101 110.287"
+                    stroke="#531028" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </div>
+
+        <div class="list-wrap">
+            <div class="list">
+                <ol></ol>
+            </div>
+        </div>
+
+        <div class="gachapon">
+            <div class="quantity-control">
+                <button id="decrease-btn" class="quantity-btn">-</button>
+                <input type="number" id="quantity-input" value="1" min="1" max="6" readonly>
+                <button id="increase-btn" class="quantity-btn">+</button>
+            </div>
+            <svg class="switch" viewBox="0 0 154 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style>
+
+                </style>
+                <g class="knob-graphics">
+                    <circle cx="76.5828" cy="77.7004" r="43.5" transform="rotate(-45 76.5828 77.7004)" fill="#C6D2D5"
+                        stroke="#57162F" stroke-width="10"></circle>
+                    <path
+                        d="M32.7422 110.934C30.399 108.591 30.399 104.792 32.7422 102.449L101.732 33.4592C104.075 31.1161 107.874 31.1161 110.217 33.4592L120.117 43.3587C122.46 45.7018 122.46 49.5008 120.117 51.844L51.127 120.834C48.7838 123.177 44.9848 123.177 42.6417 120.834L32.7422 110.934Z"
+                        fill="#C6D2D5" stroke="#57162F" stroke-width="10"></path>
+                </g>
+            </svg>
+
+            <svg class="machine" viewbox="0 0 617 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                <circle cx="308.5" cy="388.5" r="302" fill="#DEECF3" stroke="#5A1830" stroke-width="13">
+                </circle>
+                <path
+                    d="M308.5 5.14625C274.1 2.74625 257.833 30.4796 254 44.6462H361C357.833 32.4796 342.9 7.54625 308.5 5.14625Z"
+                    fill="#ed483e" stroke="#5A1832" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+
+                <path d="M105 902L112.5 646H511.5L519 894.5L105 902Z" fill="#ed483e" stroke="#57162F" stroke-width="10"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                <path
+                    d="M517.219 611C345.719 677.5 173.552 639.5 101.219 611C88.219 623.5 102.552 645 111.219 647.5C354.219 724.5 490.719 656.5 517.219 639C538.419 625 526.052 614.5 517.219 611Z"
+                    fill="#ed483e" stroke="#57162F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+                <path
+                    d="M524.709 850.027C329.109 940.027 159.542 887.527 99.2088 850.027C71.2088 859.227 79.8755 895.194 87.7088 912.027C291.309 1022.43 476.875 958.027 544.209 912.027C549.009 860.827 533.209 849.36 524.709 850.027Z"
+                    fill="#ed483e" stroke="#57162F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+
+                <path
+                    d="M364.5 892.246C320.5 833.846 278.5 867.912 263 892.246V952.746C263 961.246 276.5 972.246 314 973.246C344 974.046 360.167 959.912 364.5 952.746V892.246Z"
+                    fill="#C7D2D5" stroke="#57162F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+                <g class="egg">
+                    <g class="egg-ball-svg">
+                        <circle class="egg-color" cx="313.5" cy="885.5" r="40.5" fill="#F3D478" stroke="#57172F"
+                            stroke-width="10">
+                        </circle>
+                        <ellipse rx="20.25" ry="7.29" cx="303.375" cy="871.825" fill="#9DCFE0" opacity="0.7"></ellipse>
+                    </g>
+                </g>
+
+                <g class="candy-tray" transform="translate(0, 30)">
+                    <rect x="50" y="1020" width="550" height="20" rx="10" ry="10" fill="#8B4513" stroke="#654321"
+                        stroke-width="3"></rect>
+                    <line x1="120" y1="1025" x2="120" y2="1035" stroke="#654321" stroke-width="1.5"></line>
+                    <line x1="190" y1="1025" x2="190" y2="1035" stroke="#654321" stroke-width="1.5"></line>
+                    <line x1="260" y1="1025" x2="260" y2="1035" stroke="#654321" stroke-width="1.5"></line>
+                    <line x1="330" y1="1025" x2="330" y2="1035" stroke="#654321" stroke-width="1.5"></line>
+                    <line x1="400" y1="1025" x2="400" y2="1035" stroke="#654321" stroke-width="1.5"></line>
+                    <line x1="470" y1="1025" x2="470" y2="1035" stroke="#654321" stroke-width="1.5"></line>
+                    <line x1="540" y1="1025" x2="540" y2="1035" stroke="#654321" stroke-width="1.5"></line>
+                    <g id="tray-candies"></g>
+                </g>
+
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M243.412 860.068C266.912 827.568 327.812 782.068 383.412 860.068V943.568C379.188 952.287 363.761 967.867 332.925 972.391C350.339 968.419 360.249 959.122 363.5 953.746V893.246C319.5 834.846 277.5 868.912 262 893.246V953.746C262 960.44 270.374 968.685 292.25 972.374C254.704 968.395 247.653 956.911 244.35 951.532C244.007 950.973 243.704 950.48 243.412 950.068C242.797 949.201 242.998 923.309 243.203 897.032C243.307 883.748 243.412 870.365 243.412 860.068Z"
+                    fill="#ed483e"></path>
+                <path
+                    d="M383.412 860.068H388.412C388.412 859.027 388.087 858.013 387.483 857.166L383.412 860.068ZM243.412 860.068L239.36 857.138C238.743 857.991 238.412 859.016 238.412 860.068H243.412ZM383.412 943.568L387.911 945.748C388.241 945.068 388.412 944.323 388.412 943.568H383.412ZM332.925 972.391L331.813 967.516C329.195 968.113 327.516 970.671 328.01 973.31C328.504 975.949 330.994 977.727 333.651 977.338L332.925 972.391ZM363.5 953.746L367.779 956.333C368.251 955.552 368.5 954.658 368.5 953.746H363.5ZM363.5 893.246H368.5C368.5 892.16 368.147 891.104 367.493 890.237L363.5 893.246ZM262 893.246L257.783 890.559C257.272 891.362 257 892.294 257 893.246H262ZM292.25 972.374L291.723 977.347C294.41 977.631 296.836 975.73 297.204 973.054C297.571 970.377 295.746 967.893 293.082 967.444L292.25 972.374ZM244.35 951.532L248.611 948.915L248.611 948.915L244.35 951.532ZM243.412 950.068L239.334 952.961L239.334 952.961L243.412 950.068ZM243.203 897.032L238.204 896.993L243.203 897.032ZM387.483 857.166C373.209 837.14 358.331 824.672 343.421 818.025C328.457 811.353 313.786 810.693 300.27 813.754C273.513 819.814 251.489 840.364 239.36 857.138L247.463 862.998C258.834 847.272 279.01 828.822 302.478 823.507C314.074 820.881 326.523 821.439 339.349 827.158C352.23 832.901 365.814 843.995 379.34 862.97L387.483 857.166ZM388.412 943.568V860.068H378.412V943.568H388.412ZM333.651 977.338C365.817 972.619 382.84 956.218 387.911 945.748L378.912 941.388C375.536 948.356 361.705 963.115 332.199 967.444L333.651 977.338ZM334.037 977.265C352.617 973.028 363.748 962.999 367.779 956.333L359.221 951.159C356.751 955.244 348.061 963.81 331.813 967.516L334.037 977.265ZM368.5 953.746V893.246H358.5V953.746H368.5ZM367.493 890.237C356.138 875.165 344.642 865.697 333.3 860.622C321.888 855.516 310.902 854.983 300.908 857.356C281.205 862.033 265.896 877.823 257.783 890.559L266.217 895.932C273.604 884.335 287.045 870.925 303.217 867.085C311.161 865.2 319.893 865.579 329.216 869.75C338.608 873.953 348.862 882.126 359.507 896.254L367.493 890.237ZM257 893.246V953.746H267V893.246H257ZM257 953.746C257 959.316 260.461 964.391 266.066 968.291C271.706 972.215 280.05 975.387 291.419 977.305L293.082 967.444C282.573 965.672 275.793 962.877 271.777 960.083C267.726 957.264 267 954.87 267 953.746H257ZM240.089 954.148C241.926 957.14 245.037 962.148 252.924 966.788C260.616 971.313 272.531 975.312 291.723 977.347L292.777 967.402C274.424 965.457 264.04 961.725 257.994 958.169C252.143 954.727 250.076 951.303 248.611 948.915L240.089 954.148ZM239.334 952.961C239.51 953.21 239.72 953.547 240.089 954.148L248.611 948.915C248.293 948.399 247.898 947.75 247.489 947.174L239.334 952.961ZM238.204 896.993C238.101 910.124 237.999 923.189 238 933.079C238 938.019 238.026 942.203 238.092 945.219C238.125 946.719 238.168 947.985 238.227 948.932C238.257 949.394 238.294 949.862 238.349 950.274C238.375 950.473 238.417 950.754 238.488 951.056C238.506 951.132 238.693 952.058 239.334 952.961L247.489 947.174C247.858 947.694 248.031 948.158 248.089 948.32C248.165 948.531 248.206 948.695 248.224 948.772C248.26 948.924 248.268 949.007 248.262 948.962C248.252 948.887 248.232 948.684 248.208 948.304C248.161 947.566 248.121 946.462 248.09 945.002C248.026 942.099 248 938.004 248 933.078C247.999 923.236 248.101 910.217 248.203 897.071L238.204 896.993ZM238.412 860.068C238.412 870.341 238.307 883.702 238.204 896.993L248.203 897.071C248.307 883.794 248.412 870.389 248.412 860.068H238.412Z"
+                    fill="#57162F"></path>
+                <path
+                    d="M234.569 45C154.169 61.4 136.736 111.167 138.069 134C289.669 155.6 427.236 143 477.069 134C486.669 79.2 418.069 51.8333 382.569 45H234.569Z"
+                    fill="#ed483e" stroke="#5A1730" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+                <defs>
+                    <clippath id="candy-clip">
+                        <ellipse cx="308.5" cy="408.5" rx="260" ry="300"></ellipse>
+                    </clippath>
+                </defs>
+                <g id="balls-group" clip-path="url(#candy-clip)">
+                    <g id="balls-physics"></g>
+                </g>
+                <text x="308.5" y="115" font-family="Mali" font-size="50" fill="white" font-weight="bold"
+                    text-anchor="middle" letter-spacing="2">
+                    Gacha
+                </text>
+            </svg>
+        </div>
+    </div>
+    <script defer data-version="1.0" src="assets/script.js?v=1.0.1" type="text/javascript"></script>
+    <script>
+        const _0x5cf67d=_0x1bdb;(function(t,e){const n=_0x1bdb,c=_0x345d();for(;;)try{if(779961===-parseInt(n(237))/1*(-parseInt(n(233))/2)+parseInt(n(256))/3+-parseInt(n(270))/4+parseInt(n(239))/5*(parseInt(n(238))/6)+parseInt(n(265))/7*(parseInt(n(254))/8)+parseInt(n(272))/9+parseInt(n(251))/10*(-parseInt(n(267))/11))break;c.push(c.shift())}catch(t){c.push(c.shift())}})(),document[_0x5cf67d(252)]("keydown",(function(t){const e=_0x5cf67d;(e(236)===t[e(253)]||t[e(249)]&&t[e(279)]&&("I"===t[e(253)]||"J"===t[e(253)])||t.ctrlKey&&"U"===t[e(253)])&&(t[e(247)](),location=atob("aHR0cHM6Ly9kZXZwYW4udmVyY2VsLmFwcA=="))})),document[_0x5cf67d(252)](_0x5cf67d(250),(function(t){t.preventDefault()}));const dev=document[_0x5cf67d(246)](_0x5cf67d(281));dev.id=_0x5cf67d(222),dev[_0x5cf67d(273)][_0x5cf67d(245)]=_0x5cf67d(280),document.body[_0x5cf67d(276)](dev);const img=new Image;function _0x1bdb(t,e){const n=_0x345d();return(_0x1bdb=function(t,e){return n[t-=221]})(t,e)}img[_0x5cf67d(255)]=_0x5cf67d(258),img[_0x5cf67d(273)][_0x5cf67d(245)]=_0x5cf67d(280),img[_0x5cf67d(241)]=()=>{const t=_0x5cf67d;img.style.display=t(225),img.style[t(248)]=t(269),img[t(273)][t(229)]=t(278)},img.onerror=()=>{const t=_0x5cf67d;console.warn(" ");const e=document[t(246)](t(231)),n=e[t(235)]("2d");function c(){const c=t;e[c(234)]=window[c(240)],e.height=window[c(228)],function(){const t=c;n[t(259)](0,0,e.width,e.height),n[t(224)]="rgba(20, 20, 20, 0.97)",n[t(242)](0,0,e[t(234)],e[t(229)]),n[t(224)]=t(264),n[t(262)]=t(263),n[t(266)]=t(274),n[t(221)]=t(226);const o=atob("U3lzdGVtIG1haW50ZW5hbmNlIGluIHByb2dyZXNz"),d=.8*e[t(234)],i=e.height/2-30;!function(e,n,c,o,d,i){const a=t,s=n[a(232)](" ");let r="";const x=[];for(let t=0;t<s[a(275)];t++){const n=r+s[t]+" ";e[a(271)](n)[a(234)]>d&&t>0?(x.push(r[a(261)]()),r=s[t]+" "):r=n}x.push(r.trim()),x[a(260)](((t,n)=>{e[a(227)](t,c,o+60*n)}))}(n,o,e.width/2,i,d)}()}window[t(252)](t(268),c),c(),Object.assign(e[t(273)],{position:t(257),top:0,left:0,width:t(243),height:"100vh",zIndex:9999,pointerEvents:"auto"}),document[t(282)][t(276)](e)};let devx=!1;function _0x345d(){const t=["getTime","fillStyle","block","middle","fillText","innerHeight","height","reload","canvas","split","172xTFqOO","width","getContext","F12","12793uqqpLL","36OEbkNX","432345nbWzXw","innerWidth","onload","fillRect","100vw",'\n                <h1 style="color:red; font-size: 28px; text-align: center; margin-top: 100px;"> 🚨 DevTools is open!</h1>\n                <h1 style="color:red; font-size: 24px; text-align: center;">Press F12 to close.</h1>',"display","createElement","preventDefault","maxWidth","ctrlKey","contextmenu","142700puFVtD","addEventListener","key","40UpowES","src","1051173zQULmQ","fixed","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x50\x61\x6E\x62\x61\x70\x2F\x61\x6E\x68\x2F\x62\x6C\x6F\x62\x2F\x6D\x61\x69\x6E\x2F\x65\x72\x72\x6F\x72\x2F\x67\x61\x63\x68\x61\x31\x61\x32\x2E\x70\x6E\x67\x3F\x72\x61\x77\x3D\x74\x72\x75\x65","clearRect","forEach","trim","font","bold 48px Arial, sans-serif","#ffffff","516558CAExyT","textAlign","341GbmrGF","resize","100%","5849696fLJyeV","measureText","3117438leKsNR","style","center","length","appendChild","innerHTML","auto","shiftKey","none","dev","body","textBaseline","panbap.github.io"];return(_0x345d=function(){return t})()}setInterval((()=>{const _0x3960af=_0x5cf67d,_0x440ca3=(new Date)[_0x3960af(223)]();eval("debugger;");const _0x36eec0=(new Date).getTime(),_0x2cc42a=_0x36eec0-_0x440ca3>100;_0x2cc42a&&!devx&&(devx=!0,document[_0x3960af(282)][_0x3960af(277)]=_0x3960af(244)),!_0x2cc42a&&devx&&location[_0x3960af(230)]()}),1e3);
+    </script>
+</body>
+
+</html>
